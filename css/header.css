@@ -1,15 +1,12 @@
 header {
     width: 100%;
+    padding: 20px 0;
     font-size: 0;
     text-align: center;
     background-color: #fff;
     position: fixed;
     top: 0;
     z-index: 3;
-}
-
-ul {
-    padding: 15px 0;
 }
 
 ul li{
@@ -48,63 +45,3 @@ ul li a {
 ul a:hover {
     color: #ff7878;
 }
-
-
-
-/* iPad portrait */
-@media only screen 
-    and (max-device-width:1024px)
-    and (orientation:portrait) {
-        
-        ul {
-            padding: 30px 0;
-        }
-        
-        ul li div {
-            width: 50px;
-            height: 50px;
-        }
-        
-        ul li a {
-            font-size: 24px;
-        }
-        
-}
-
-
-
-/* iPhone6 portrait */
-/*@media screen 
-    and (max-device-width:768px)
-    and (orientation:portrait) {
-        
-        ul {
-            padding: 20px 0;
-        }
-        
-        #menu-logo {
-            width: 60px;
-        }
-        
-        #menu-about {
-            width: 80px;
-        }
-        
-        #menu-projects {
-            width: 100px;
-        }
-        
-        #menu-contact {
-            width: 90px;
-        }
-        
-        ul li div {
-            width: 40px;
-            height: 40px;
-        }
-        
-        ul li a {
-            font-size: 20px;
-        }
-           
-}*/

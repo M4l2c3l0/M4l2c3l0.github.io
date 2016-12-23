@@ -2,16 +2,13 @@
     width: 100%;
     position: relative;
     text-align: center;
-}
-
-#main-container {
     background-color: #eee;
     font-size: 0;
 }
 
 .panels {
     height: 675px;
-    padding-top: 70px;
+    padding-top: 80px;
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -23,29 +20,29 @@
 }
 
 #personal-info {
-    width: 300px;
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 30%;
+    max-width: 300px;
     text-align: left;
 }
 
 #personal-info h2 {
     margin-top: 10px;
+    padding-left: 53px;
     font-size: 50px;
     font-weight: 500;
     color: #ff7878;
 }
 
 #image-div {
-    width: 100%;
-    height: 280px;
+    width: 90%;
+    height: 250px;
     margin: 100px auto 0;
     background: #fff url(../images/portrait.png) center no-repeat;
     background-size: cover;
 }
 
 #personal-info p {
-    padding: 4px 0;
+    padding: 4px 0 4px 55px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 500;
@@ -57,7 +54,8 @@
 }
 
 #cv {
-    width: 640px;
+    width: 70%;
+    max-width: 640px;
 }
 
 #cv > h3 {
@@ -307,169 +305,4 @@
     padding-left: 30px;
     display: inline-block;
     vertical-align: middle;
-}
-
-
-
-/* iPad portrait */
-@media screen 
-    and (min-device-width:320px) 
-    and (max-device-width:1024px)
-    and (orientation:portrait) {
-    
-        .panels {
-            display: block;
-        }
-        
-        #personal-info,
-        #cv {
-            width: 100%;
-        }
-        
-        #personal-info {
-            height: 260px;
-            padding: 120px 0 10px;
-            background-color: #eee;
-            text-align: center;
-        }
-        
-        #image-div,
-        #basic-info {
-            width: 27%;
-            display: inline-block;
-            vertical-align: middle;
-        }
-        
-        #image-div {
-            height: 260px;
-            margin: 0 auto;
-            background-size: 100%;
-        }
-        
-        #basic-info h2 {
-            font-size: 50px;
-            font-weight: 500;
-        }
-        
-        #cv {
-            height: 827px;
-            padding: 0;
-        }
-        
-        #cv > h3 {
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 50px;
-        }
-        
-        #cv > h3 span {
-            left: 40px;
-        }
-        
-        .toggle-panels {
-            height: 631px;
-            padding: 20px 40px;
-        }
-        
-        .toggle-panels h3 {
-            font-size: 22px;
-            line-height: 50px;
-        }
-
-        .toggle-panels p {
-            font-size: 20px;
-            line-height: 25px;
-        }
-        
-        #personal-panel button {
-            height: 40px;
-            margin-top: 34px;
-            padding-bottom: 2px;
-            font-size: 20px;
-        }
-        
-        .courses p,
-        .side-description {
-            width: 84%;
-        }
-        
-        .left-gap {
-            padding-left: 170px;
-        }
-        
-        #html5, 
-        #css3, 
-        #js,
-        #jquery,
-        #git,
-        #affinity-designer, 
-        #affinity-photo, 
-        #blender,
-        #git, 
-        #php,
-        #java {
-            height: 50px;
-        }
-        
-        #html5, 
-        #css3, 
-        #js,
-        #java {
-            background-size: 35px;
-        }
-        
-        #jquery {
-            background-size: 70px;
-        }
-        
-        #affinity-designer, 
-        #affinity-photo {
-            background-size: 45px;
-        }
-        
-        #blender {
-            background-size: 50px;
-        }
-        
-        #git, 
-        #php {
-            background-size: 60px;
-        }
-        
-}
-
-/* iPad landscape */
-@media screen 
-    and (min-device-width:320px) 
-    and (max-device-width:1024px)
-    and (orientation:landscape) {
-        
-        .panels {
-            height: 643px;
-        }
-        
-        #personal-info {
-            background-color: #eee;
-        }
-        
-        #cv {
-            width: 684px;
-        }
-        
-        .toggle-panels {
-            height: 497px;
-            padding: 10px 20px;
-        }
-        
-        .separation {
-            margin: 10px auto;
-        }
-        
-        #personal-panel button {
-            height: 40px;
-            margin-top: 60px;
-            padding-bottom: 2px;
-            font-size: 20px;
-        }
-        
 }

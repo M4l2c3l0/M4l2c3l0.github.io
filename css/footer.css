@@ -1,6 +1,6 @@
 footer {
     width: 100%;
-    padding: 15px 0 10px;
+    padding: 24px 0 21px;
     font-size: 0;
     background-color: #707686;
     position: relative;
@@ -18,8 +18,8 @@ footer p {
 
 .github, 
 .mail {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     margin: 0 5px;
     display: inline-block;
     vertical-align: middle;
@@ -45,28 +45,4 @@ footer p {
     
 .mail:hover {
     background-image: url(../images/mail.png);
-}
-
-
-
-/* iPad portrait */
-@media screen 
-    and (min-device-width:768px) 
-    and (max-device-width:1024px)
-    and (orientation:portrait) {
-        
-        footer {
-            padding: 25px 0;
-        }
-        
-        footer p {
-            font-size: 16px;
-        }
-        
-        .github, 
-        .mail {
-            height: 40px;
-            width: 40px;
-        }
-        
 }
