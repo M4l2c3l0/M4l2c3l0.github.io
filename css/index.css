@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Avenir, Avenir Next, sans-serif;
+    color: #444;
+}
+
+button {
+    border: none;
+    background-color: #ff7878;
+    color: #fff;
+    cursor: pointer;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#first-panel {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#presentation-container {
+    width: 100%;
+    height: 780px;
+    padding-top: 70px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#presentation-container > div:first-child {
+    height: 455px;
+    margin: 120px auto 50px;
+}
+
+.circle, 
+#name, 
+#profession {
+    -moz-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid #222;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+#me {
+    background: #fff url(../images/me.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+#me:hover {
+    background-image: url(../images/santa-pugz.png);
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#name {
+    padding-top: 20px;
+    font: 80px STHeiti, Avenir, Arial, sans-serif;
+    color: #ff7878;
+    line-height: 60px;
+}
+
+#profession {
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 10px;
+    color: #bbb;
+}
+
+#arrow-down {
+    width: 40px;
+    height: 14px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+#outer-arrow-down, 
+#inner-arrow-down {
+    width: 0;
+    border-right: 24px solid transparent;
+    border-left: 24px solid transparent;
+    position: relative;
+}
+
+#outer-arrow-down {
+    border-top: 16px solid #ccc;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+#inner-arrow-down {
+    border-top: 16px solid #fff;
+    bottom: 20px;
+}
+
+#arrow-down:hover #outer-arrow-down{
+    border-top-color: #ff7878;
+}
+
+#second-panel {
+    width: 100%;
+    background-color: #eee;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -10px 20px #ddd;
+    font-size: 0;
+    text-align: center;
+}
+
+#second-panel h1 {
+    width: 70%;
+    margin: auto;
+    padding: 100px 0 40px;
+    font-size: 40px;
+}
+
+#img-container {
+    text-align: center;
+}
+
+.img-points {
+    width: 320px;
+    height: 215px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+#learning {
+    background: transparent url(../images/learning.png) center no-repeat;
+    background-size: cover;
+}
+
+#learning:hover {
+    background: #fff url(../images/learning-bar.png) center top no-repeat;
+    background-size: 100%;
+}
+
+#devotion {
+    background: #fff url(../images/devotion.png) center no-repeat;
+    background-size: cover;
+}
+
+#devotion:hover {
+    background: #fff url(../images/devotion-bar.png) center top no-repeat;
+    background-size: 100%;
+}
+
+#creativity {
+    background: #fff url(../images/creativity.png) center no-repeat;
+    background-size: cover;
+}
+
+#creativity:hover {
+    background: #fff url(../images/creativity-bar.png) center top no-repeat;
+    background-size: 100%;
+}
+
+.img-points p {
+    padding: 25px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ccc;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+#second-panel button {
+    width: 250px;
+    height: 40px;
+    margin: 80px 0 170px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+#second-panel button:hover {
+    background-color: #ef6868;
+}
+
+
+
+/* iPad portrait */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    
+        #presentation-container {
+            height: 980px;
+        }
+        
+        #presentation-container > div:first-child {
+            margin: 200px auto 150px;
+        }
+        
+        #second-panel h1 {
+            width: 100%;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            font-size: 35px;
+        }
+        
+        .img-points {
+            width: 400px;
+            height: 150px;
+        }
+        
+        #learning:hover,
+        #devotion:hover,
+        #creativity:hover {
+            background-size: 100% 60px;
+        }
+        
+        .img-points p {
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        #second-panel button {
+            height: 50px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            font-size: 20px;
+            border-radius: 25px;
+        }
+        
+}
+
+/* iPad landscape */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape)
+    and (-webkit-min-device-pixel-ratio: 1)  {
+        
+        #presentation-container {
+            height: 750px;
+        }
+        
+        #second-panel h1 {
+            padding-top: 80px;
+            padding-bottom: 20px;
+        }
+        
+        .img-points {
+            width: 310px;
+            height: 220px;
+        }
+        
+        #learning:hover,
+        #devotion:hover,
+        #creativity:hover {
+            background-size: 100% 70px;
+        }
+        
+        #second-panel button {
+            height: 50px;
+            margin-top: 60px;
+            margin-bottom: 140px;
+            font-size: 20px;
+            border-radius: 25px;
+        }
+        
+}
+
+
+
+/* iPhone portrait */
+/*
+@media only screen 
+    and (max-device-width:768px)
+    and (orientation:portrait) {
+    
+        #presentation-container {
+            height: 620px;
+        }
+        
+        #presentation-container > div:first-child {
+            margin: 80px auto 0;
+        }
+        
+        .circle {
+            width: 230px;
+            height: 230px;
+            margin: 10px;
+        }
+        
+        #second-panel h1 {
+            width: 100%;
+            padding: 30px 0 10px;
+            font-size: 26px;
+            line-height: 30px;
+        }
+        
+        .img-points {
+            width: 240px;
+            height: 100px;
+            margin: 5px;
+        }
+        
+        #learning:hover,
+        #devotion:hover,
+        #creativity:hover {
+            background-size: 100% 40px;
+        }
+        
+        .img-points p {
+            padding: 5px;
+            font-size: 12px;
+        }
+        
+        #second-panel button {
+            width: 150px;
+            height: 30px;
+            margin-top: 30px;
+            margin-bottom: 45px;
+            font-size: 12px;
+            border-radius: 15px;
+        }
+        
+}
+*/
+
+/* iPhone landscape */
+/*
+@media only screen 
+    and (max-device-width:768px)
+    and (orientation:landscape) {
+        
+        #presentation-container {
+            height: 330px;
+        }
+        
+        #presentation-container > div:first-child {
+            height: 260px;
+            margin: 14px auto 0;
+        }
+        
+        .circle {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+        
+        #name {
+            padding-top: 5px;
+            font: 40px STHeiti, Avenir, Arial, sans-serif;
+            line-height: 30px;
+        }
+
+        #profession {
+            font-size: 16px;
+        }
+        
+        #outer-arrow-down, 
+        #inner-arrow-down {
+            border-right-width: 16px;
+            border-left-width: 16px;
+        }
+        
+        #outer-arrow-down {
+            border-top-width: 10px;
+        }
+
+        #inner-arrow-down {
+            border-top-width: 10px;
+            bottom: 12px;
+        }
+        
+        #second-panel h1 {
+            padding-top: 20px;
+            padding-bottom: 0;
+            font-size: 30px;
+        }
+        
+        .img-points {
+            width: 190px;
+            height: 110px;
+            margin: 5px;
+        }
+        
+        .img-points p {
+            padding: 5px;
+            font-size: 12px;
+        }
+        
+        #learning:hover,
+        #devotion:hover,
+        #creativity:hover {
+            background-size: 100% 40px;
+        }
+        
+        #second-panel button {
+            width: 180px;
+            height: 30px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+        
+}*/

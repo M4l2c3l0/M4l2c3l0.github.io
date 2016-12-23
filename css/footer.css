@@ -1,0 +1,72 @@
+footer {
+    width: 100%;
+    padding: 15px 0 10px;
+    font-size: 0;
+    background-color: #707686;
+    position: relative;
+    bottom: 0;
+    z-index: 3;
+}
+
+footer p {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #444;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.github, 
+.mail {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    -o-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+.github {
+    background: transparent url(../images/github-grey.png) center no-repeat;
+    background-size: 100%;
+}
+
+.github:hover {
+    background-image: url(../images/github.png);
+}
+
+.mail {
+    background: transparent url(../images/mail-grey.png) center no-repeat;
+    background-size: 100%;
+}
+    
+.mail:hover {
+    background-image: url(../images/mail.png);
+}
+
+
+
+/* iPad portrait */
+@media screen 
+    and (min-device-width:768px) 
+    and (max-device-width:1024px)
+    and (orientation:portrait) {
+        
+        footer {
+            padding: 25px 0;
+        }
+        
+        footer p {
+            font-size: 16px;
+        }
+        
+        .github, 
+        .mail {
+            height: 40px;
+            width: 40px;
+        }
+        
+}
