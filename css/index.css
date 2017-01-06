@@ -36,6 +36,7 @@ a {
     padding-top: 70px;
     background-color: #fff;
     text-align: center;
+    position: relative;
 }
 
 #first-panel > div:first-child {

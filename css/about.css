@@ -25,14 +25,6 @@
     text-align: left;
 }
 
-#personal-info h2 {
-    margin-top: 10px;
-    padding-left: 53px;
-    font-size: 50px;
-    font-weight: 500;
-    color: #ff7878;
-}
-
 #image-div {
     width: 90%;
     height: 250px;
@@ -41,16 +33,23 @@
     background-size: cover;
 }
 
+#personal-info h2 {
+    margin-top: 10px;
+    padding-left: 60px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #ff7878;
+}
+
 #personal-info p {
-    padding: 4px 0 4px 55px;
+    padding: 4px 0 4px 62px;
     font-size: 18px;
     line-height: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #personal-info span {
     color: #ccc;
-    font-weight: 300;
 }
 
 #cv {
@@ -100,6 +99,8 @@
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
     text-align: left;
+    display: flex; /* flexbox setup */
+    flex-direction: row; /* vertical flexibility */
 }
 
 .toggle-panels h3 {
