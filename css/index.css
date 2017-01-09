@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/Avenir.ttc);
+}
+
+@font-face {
+    font-family: STHeiti;
+    src: url(../fonts/STHeiti.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -203,4 +213,23 @@ a {
 
 #second-panel button:hover {
     background-color: #ef6868;
+}
+
+
+
+/* ---------- HiDPI screen ---------- */
+
+
+
+
+#first-panel {
+    height: 850px;
+}
+
+#first-panel > div:first-child {
+    height: 500px;
+}
+
+#second-panel h1 {
+    padding: 120px 0 40px;
 }

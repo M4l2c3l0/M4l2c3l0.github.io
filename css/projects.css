@@ -358,3 +358,28 @@
 #misc-panel a button {
     margin: 10px 0 0 20px;
 }
+
+
+
+
+/* ---------- HiDPI screen ---------- */
+
+
+
+
+.panels {
+    height: 750px;
+}
+
+#projects-info div h2 {
+    margin-top: 50px;
+}
+
+.toggle-panels {
+    height: 530px;
+    padding: 47px 20px;
+}
+
+#cip-panel button {
+    margin: 130px auto 0;
+}

@@ -307,3 +307,28 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+
+
+
+/* ---------- HiDPI screen ---------- */
+
+
+
+
+.panels {
+    height: 750px;
+}
+
+#image-div {
+    margin: 150px auto 0;
+}
+
+.toggle-panels {
+    height: 530px;
+    padding: 47px 20px;
+}
+
+#personal-panel button {
+    margin: 50px auto 0;
+}
