@@ -36,7 +36,7 @@
 #personal-info h2 {
     margin-top: 10px;
     padding-left: 45px;
-    font-size: 45px;
+    font: 45px STHeiti, Avenir, Arial, sans-serif;
     font-weight: 400;
     color: #ff7878;
 }
