@@ -45,12 +45,12 @@ $(document).ready(function() {
     });//ends click()
   
     //assigns id elements from DOM to new vars (to be done in JS, not jQuery)
-    var close = document.getElementById('close-button');
+    var close = document.getElementById('modal-close-button');
     var modal = document.getElementById('modal');
     var modalWindow = document.getElementById('modal-window');
     //when clicking anywhere in window trigger event
     window.onclick = function(event) {
-        //if div clicked is either #modal or #close-button
+        //if div clicked is either #modal or #modal-close-button
         if(event.target == modal || event.target == close) {
             //modal disappears
             modal.style.display='none';

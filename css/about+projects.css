@@ -1,10 +1,9 @@
+                    /* -------------------- GENERAL -------------------- */
+
 #main-container {
     width: 100%;
     position: relative;
     text-align: center;
-}
-
-#main-container {
     background-color: #eee;
     font-size: 0;
 }
@@ -17,19 +16,309 @@
     position: relative;
 }
 
-#projects-info, 
-#portfolio {
+#left-section,
+#right-section {
     background-color: #fff;
 }
 
-#projects-info {
+#left-section {
     width: 30%;
     max-width: 300px;
-    text-align: center;
+    text-align: left;
 }
 
-#projects-info div h2 {
-    margin: 20px 0 0 0;
+#right-section {
+    width: 70%;
+    max-width: 640px;
+}
+
+#right-section > h3 {
+    background-color: #ddd;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+#right-section > h3, 
+#right-section > h3  span {
+    -o-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+#right-section > h3 span {
+    position: absolute;
+    left: 20px;
+}
+
+#right-section > h3:hover,
+#right-section > h3:hover span {
+    color: #fff;
+}
+
+#right-section .selected,
+#right-section .selected span {
+    color: #fff;
+}
+
+#right-section .selected {
+    background-color: #ff7878;
+}
+
+.toggle-panels {
+    height: 454px;
+    padding: 10px;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    text-align: left;
+}
+
+.toggle-panels h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.toggle-panels p,
+.toggle-panels p q {
+    font-size: 16px;
+    line-height: 18px;
+    color: #888;
+}
+
+.separation {
+    width: 300px;
+    margin: 20px auto 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+                    /* -------------------- ABOUT-PAGE -------------------- */
+
+#left-section-image {
+    width: 90%;
+    height: 250px;
+    margin: 80px auto 0;
+    background: #fff url(../images/portrait.png) center no-repeat;
+    background-size: cover;
+}
+
+#left-section h1 {
+    margin-top: 10px;
+    padding-left: 45px;
+    font: 45px STHeiti, Avenir, Arial, sans-serif;
+    font-weight: 400;
+    color: #ff7878;
+}
+
+#left-section p {
+    padding: 4px 0 4px 47px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+#left-section span {
+    color: #ccc;
+}
+
+#personal-panel {
+    display: block;
+}
+
+#personal-panel button {
+    width: 150px;
+    height: 30px;
+    margin: 25px auto 0;
+    border-radius: 20px;
+    background-color: #ff7878;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#personal-panel button:hover {
+    background-color: #ef6868;
+}
+
+#studies-panel,
+#skills-panel {
+    display: none;
+}
+
+.courses {
+    margin-bottom: 10px;
+}
+
+#citylit {
+    background: #fff url(../images/citylit.png) center no-repeat;
+    background-size: 100px;
+}
+
+#city-university {
+    background: #fff url(../images/city-university.png) center no-repeat;
+    background-size: 95px;
+}
+
+#citylit,
+#city-university,
+#codecademy,
+#lynda,
+#udemy {
+    width: 120px;
+    height: 65px;
+    margin-right: 20px;
+}
+
+#codecademy {
+    background: #fff url(../images/codecademy.png) center no-repeat;
+    background-size: 60px;
+}
+
+#lynda {
+    background: #fff url(../images/lynda.png) center no-repeat;
+    background-size: 70px;
+}
+
+#udemy {
+    background: #fff url(../images/udemy.png) center no-repeat;
+    background-size: 50px;
+}
+
+.courses div,
+.courses p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.courses p {
+    width: 450px;
+}
+
+.courses a {
+    color: #ff7878;
+}
+
+.separation-panels {
+    width: 298px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name-score,
+.circles{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.name-score p {
+    font-size: 14px;
+}
+
+#html5, 
+#css3, 
+#js,
+#jquery,
+#git,
+#affinity-designer, 
+#affinity-photo, 
+#blender,
+#git, 
+#php,
+#java {
+    width: 100px;
+    height: 40px;
+    margin: 0 0 3px 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circles {
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.yellow {
+    width: 12px;
+    height: 12px;
+    background-color: #ffeb80;
+}
+
+.grey {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+
+#html5 {
+    background: #fff url(../images/html5.png) center no-repeat;
+    background-size: 28px;
+}
+
+#css3 {
+    background: #fff url(../images/css3.png) center no-repeat;
+    background-size: 28px;
+}
+
+#js {
+    background: #fff url(../images/javascript.png) center no-repeat;
+    background-size: 28px;
+}
+
+#jquery {
+    background: #fff url(../images/jquery.png) center no-repeat;
+    background-size: 60px;
+}
+
+#affinity-designer {
+    background: #fff url(../images/affinity-designer.png) center no-repeat;
+    background-size: 35px;
+}
+
+#affinity-photo {
+    background: #fff url(../images/affinity-photo.png) center no-repeat;
+    background-size: 35px;
+}
+
+#blender {
+    background: #fff url(../images/blender.png) center no-repeat;
+    background-size: 40px;
+}
+
+#git {
+    background: #fff url(../images/git.png) center no-repeat;
+    background-size: 50px;
+}
+
+#php {
+    background: #fff url(../images/php.png) center no-repeat;
+    background-size: 50px;
+}
+
+#java {
+    background: #fff url(../images/java.png) center no-repeat;
+    background-size: 27px;
+}
+
+.side-description {
+    width: 460px;
+    padding-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+                    /* -------------------- PROJECTS-PAGE -------------------- */
+
+#left-section div h2 {
+    margin: 20px 0 0 29px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
@@ -37,7 +326,7 @@
     cursor: pointer;
 }
 
-#projects-info div .active-h2 {
+#left-section div .active-h2 {
     color: #ff7878;
 }
 
@@ -70,81 +359,6 @@
 #cip-preview {
     background: #fff url(../images/cip-small.png) center no-repeat;
     background-size: cover; 
-}
-
-#portfolio {
-    width: 70%;
-    max-width: 640px;
-}
-
-#portfolio > h3 {
-    background-color: #ddd;
-    border-bottom: 2px solid #fff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 40px;
-}
-
-#portfolio > h3, 
-#portfolio > h3  span {
-    color: #444;
-    -o-transition-duration: 300ms;
-    -moz-transition-duration: 300ms;
-    -webkit-transition-duration: 300ms;
-    transition-duration: 300ms;
-    cursor: pointer;
-}
-
-#portfolio > h3 span {
-    position: absolute;
-    left: 20px;
-}
-
-#portfolio > h3:hover,
-#portfolio > h3:hover span {
-    color: #fff;
-}
-
-#portfolio .selected {
-    background-color: #ff7878;
-}
-
-#portfolio .selected,
-#portfolio .selected span {
-    color: #fff
-}
-
-.toggle-panels {
-    height: 454px;
-    padding: 10px;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    text-align: left;
-}
-
-.toggle-panels h3 {
-    padding: 5px 0;
-    background-color: transparent;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.toggle-panels p {
-    font-size: 16px;
-    line-height: 18px;
-    color: #888;
-}
-
-.toggle-panels p q {
-    color: #888;
-}
-
-.separation {
-    width: 300px;
-    margin: 20px auto 5px;
-    border-bottom: 1px solid #ddd;
 }
 
 #cip-logo {
@@ -232,7 +446,7 @@
     left: 0;
 }
 
-#close-button {
+#modal-close-button {
     width: 30px;
     height: 30px;
     margin: 5px 5px 0 0;
@@ -245,7 +459,7 @@
     line-height: 43px;
 }
 
-#close-button:hover {
+#modal-close-button:hover {
     background-image: url(../images/close-button_grey.png);
 }
 
@@ -373,19 +587,18 @@
 
 
 
-
-/* ---------- HiDPI screen ---------- */
+                    /* -------------------- HiDPI screen (1281-1440px) -------------------- */
 
 @media only screen 
     and (min-width: 1281px)
-    and (min-width: 1440px) {
-        
+    and (max-width: 1440px) {
+
     .panels {
         height: 700px;
     }
 
-    #projects-info div h2 {
-        margin-top: 50px;
+    #left-section-image {
+        margin: 150px auto 0;
     }
 
     .toggle-panels {
@@ -403,9 +616,8 @@
         line-height: 22px;
     }
 
-    #cip-panel button {
-        margin: 102px auto 0;
-    } 
-        
+    #personal-panel button {
+        margin: 15px auto 0;
+    }
+    
 }
-

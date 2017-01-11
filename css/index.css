@@ -1,3 +1,5 @@
+                    /* -------------------- GENERAL -------------------- */
+
 @font-face {
     font-family: Avenir;
     src: url(../fonts/Avenir.ttc);
@@ -32,6 +34,62 @@ button:focus {
 a {
     text-decoration: none;
 }
+
+
+
+                    /* -------------------- HEADER -------------------- */
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 0;
+    text-align: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+ul li{
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul li div, 
+ul li a {
+    -o-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+ul li div {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0) url(../images/bM-favicon-grey.png) center no-repeat;
+    background-size: 100%;
+}
+
+ul li div:hover {
+    background-image: url(../images/bM-favicon.png);
+}
+
+ul li a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: #ff7878;
+}
+
+
+
+                    /* -------------------- INDEX-PAGE -------------------- */
 
 #index-container {
     width: 100%;
@@ -217,7 +275,60 @@ a {
 
 
 
-/* ---------- HiDPI screen ---------- */
+                    /* -------------------- FOOTER -------------------- */
+
+footer {
+    width: 100%;
+    padding: 19px 0 16px;
+    font-size: 0;
+    background-color: #707686;
+    position: relative;
+    bottom: 0;
+    z-index: 3;
+}
+
+footer p {
+    padding-right: 20px;
+    font-size: 14px;
+    color: #444;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.github, 
+.mail {
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    -o-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+.github {
+    background: transparent url(../images/github-grey.png) center no-repeat;
+    background-size: 100%;
+}
+
+.github:hover {
+    background-image: url(../images/github.png);
+}
+
+.mail {
+    background: transparent url(../images/mail-grey.png) center no-repeat;
+    background-size: 100%;
+}
+    
+.mail:hover {
+    background-image: url(../images/mail.png);
+}
+
+
+
+                    /* -------------------- HiDPI screen (1281-1440px) -------------------- */
 
 @media only screen 
     and (min-width: 1281px)
