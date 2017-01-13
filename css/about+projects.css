@@ -9,7 +9,8 @@
 }
 
 .panels {
-    height: 600px;
+    height: 80vh;
+    min-height: 588px;
     padding-top: 80px;
     display: inline-block;
     vertical-align: top;
@@ -24,12 +25,14 @@
 #left-section {
     width: 30%;
     max-width: 300px;
+    min-width: 200px;
     text-align: left;
 }
 
 #right-section {
     width: 70%;
     max-width: 640px;
+    min-width: 640px;
 }
 
 #right-section > h3 {
@@ -40,7 +43,7 @@
     line-height: 40px;
 }
 
-#right-section > h3, 
+#right-section > h3,
 #right-section > h3  span {
     -o-transition-duration: 300ms;
     -moz-transition-duration: 300ms;
@@ -69,7 +72,7 @@
 }
 
 .toggle-panels {
-    height: 454px;
+    height: 442px;
     padding: 10px;
     border-right: 1px solid #eee;
     border-left: 1px solid #eee;
@@ -93,6 +96,11 @@
     width: 300px;
     margin: 20px auto 5px;
     border-bottom: 1px solid #ddd;
+}
+
+/* prevents footer from moving on window-resizing */
+footer {
+    position: relative;
 }
 
 
@@ -220,15 +228,15 @@
     font-size: 14px;
 }
 
-#html5, 
-#css3, 
+#html5,
+#css3,
 #js,
 #jquery,
 #git,
-#affinity-designer, 
-#affinity-photo, 
+#affinity-designer,
+#affinity-photo,
 #blender,
-#git, 
+#git,
 #php,
 #java {
     width: 100px;
@@ -358,7 +366,7 @@
 
 #cip-preview {
     background: #fff url(../images/cip-small.png) center no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 #cip-logo {
@@ -466,7 +474,7 @@
 #cip-panel button,
 #misc-panel button {
     background-color: #ff7878;
-    
+
 }
 
 #cip-panel button {
@@ -589,12 +597,13 @@
 
                     /* -------------------- HiDPI screen (1281-1440px) -------------------- */
 
-@media only screen 
+@media only screen
     and (min-width: 1281px)
     and (max-width: 1440px) {
 
     .panels {
-        height: 700px;
+        height: 80.6vh;
+        padding-top: 11.4vh;
     }
 
     #left-section-image {
@@ -602,13 +611,12 @@
     }
 
     .toggle-panels {
-        height: 480px;
-        padding: 47px 20px;
+        height: 499px;
+        padding: 20px;
     }
-        
+
     .toggle-panels h3 {
         font-size: 20px;
-        line-height: 26px;
     }
 
     .toggle-panels p {
@@ -619,5 +627,5 @@
     #personal-panel button {
         margin: 15px auto 0;
     }
-    
+
 }
