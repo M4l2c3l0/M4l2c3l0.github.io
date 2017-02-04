@@ -3,8 +3,8 @@ $(document).ready(function() {
     /* -------------------- SEASONAL-ANIMATION -------------------- */
     
     function imgHover() {
-        document.getElementById('name').setAttribute('style', 'transform: scale(.6); padding-top: 50px; line-height: 10px; color: #ccc;');
-        document.getElementById('profession').setAttribute('style', 'transform: scale(.6); line-height: 5px;');
+        document.getElementById('name').setAttribute('style', 'transform: scale(.7); padding-top: 50px; line-height: 20px; color: #ccc;');
+        document.getElementById('profession').setAttribute('style', 'transform: scale(.7); line-height: 10px;');
     }
 
     function imgHoverOff() {

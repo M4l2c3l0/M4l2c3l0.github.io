@@ -139,7 +139,7 @@ ul a:hover {
 }
 
 #me:hover {
-    background-image: url(../images/santa-pugz.png);
+    background-image: url(../images/pugz-dollarz.jpg);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -385,6 +385,10 @@ footer p {
     #second-panel button {
         margin-top: 60px;
     }
+        
+    footer {
+        padding: 20px 0 17px;
+    }
 
 }
 
@@ -395,7 +399,8 @@ and (min-width: 1441px)
 and (max-width: 1680px) {
 
     header {
-        padding: 30px 0;
+        height: 50px;
+        padding: 25px 0;
     }
 
     ul li{

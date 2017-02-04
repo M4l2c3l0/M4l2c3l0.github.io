@@ -72,9 +72,8 @@
 }
 
 .toggle-panels {
-    height: 442px;
+    height: 63.7vh;
     padding: 10px;
-    border-right: 1px solid #eee;
     border-left: 1px solid #eee;
     text-align: left;
 }
@@ -141,7 +140,7 @@ footer {
 #personal-panel button {
     width: 150px;
     height: 30px;
-    margin: 25px auto 0;
+    margin: 20px auto 0;
     border-radius: 20px;
     background-color: #ff7878;
     font-size: 16px;
@@ -597,10 +596,19 @@ footer {
 
                     /* -------------------- HiDPI screen (1281-1440px) -------------------- */
 
+
 @media only screen
     and (min-width: 1281px)
     and (max-width: 1440px) {
+        
+    .panels {
+        height: 80.6vh;
+        padding-top: 90px;
+    }
+        
+}
 
+/*
     .panels {
         height: 80.6vh;
         padding-top: 11.4vh;
@@ -629,3 +637,4 @@ footer {
     }
 
 }
+*/
