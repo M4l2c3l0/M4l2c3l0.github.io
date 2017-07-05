@@ -1,19 +1,19 @@
                     /* -------------------- GENERAL -------------------- */
 
 @font-face {
-    font-family: Avenir;
-    src: url(../fonts/Avenir.ttc);
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.ttc');
 }
 
 @font-face {
-    font-family: STHeiti;
-    src: url(../fonts/STHeiti.ttf);
+    font-family: 'STHeiti';
+    src: url('../fonts/STHeiti.ttf');
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Avenir, Avenir Next, sans-serif;
+    font-family: 'Avenir', Arial, sans-serif;
     color: #444;
 }
 
@@ -69,12 +69,12 @@ ul li div {
     width: 40px;
     height: 40px;
     margin: auto;
-    background: rgba(255, 255, 255, 0) url(../images/bM-favicon-grey.png) center no-repeat;
+    background: rgba(255, 255, 255, 0) url('../images/bM-favicon-grey.png') center no-repeat;
     background-size: 100%;
 }
 
 ul li div:hover {
-    background-image: url(../images/bM-favicon.png);
+    background-image: url('../images/bM-favicon.png');
 }
 
 ul li a {
@@ -134,12 +134,12 @@ ul a:hover {
 }
 
 #me {
-    background: #fff url(../images/me.jpeg) center no-repeat;
+    background: #fff url('../images/me.jpeg') center no-repeat;
     background-size: cover;
 }
 
 #me:hover {
-    background-image: url(../images/pugz-dollarz.jpg);
+    background-image: url('../images/pugz-dollarz.jpg');
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -147,7 +147,7 @@ ul a:hover {
 
 #name {
     padding-top: 20px;
-    font: 70px STHeiti, Avenir, Arial, sans-serif;
+    font: 70px 'STHeiti', 'Avenir', Arial, sans-serif;
     color: #ff7878;
     line-height: 60px;
 }
@@ -227,32 +227,32 @@ ul a:hover {
 }
 
 #learning {
-    background: transparent url(../images/learning.png) center no-repeat;
+    background: transparent url('../images/learning.png') center no-repeat;
     background-size: cover;
 }
 
 #learning:hover {
-    background: #fff url(../images/learning-bar.png) center top no-repeat;
+    background: #fff url('../images/learning-bar.png') center top no-repeat;
     background-size: 100%;
 }
 
 #devotion {
-    background: #fff url(../images/devotion.png) center no-repeat;
+    background: #fff url('../images/devotion.png') center no-repeat;
     background-size: cover;
 }
 
 #devotion:hover {
-    background: #fff url(../images/devotion-bar.png) center top no-repeat;
+    background: #fff url('../images/devotion-bar.png') center top no-repeat;
     background-size: 100%;
 }
 
 #creativity {
-    background: #fff url(../images/creativity.png) center no-repeat;
+    background: #fff url('../images/creativity.png') center no-repeat;
     background-size: cover;
 }
 
 #creativity:hover {
-    background: #fff url(../images/creativity-bar.png) center top no-repeat;
+    background: #fff url('../images/creativity-bar.png') center top no-repeat;
     background-size: 100%;
 }
 
@@ -315,21 +315,21 @@ footer p {
 }
 
 .github {
-    background: transparent url(../images/github-grey.png) center no-repeat;
+    background: transparent url('../images/github-grey.png') center no-repeat;
     background-size: 100%;
 }
 
 .github:hover {
-    background-image: url(../images/github.png);
+    background-image: url('../images/github.png');
 }
 
 .mail {
-    background: transparent url(../images/mail-grey.png) center no-repeat;
+    background: transparent url('../images/mail-grey.png') center no-repeat;
     background-size: 100%;
 }
 
 .mail:hover {
-    background-image: url(../images/mail.png);
+    background-image: url('../images/mail.png');
 }
 
 
@@ -368,11 +368,11 @@ footer p {
         margin: 25px 25px 15px;
         border-width: 3px;
     }
-        
+
     #name {
         font-size: 75px;
     }
-        
+
     #profession {
         font-size: 24px;
         line-height: 18px;
@@ -385,7 +385,7 @@ footer p {
     #second-panel button {
         margin-top: 60px;
     }
-        
+
     footer {
         padding: 20px 0 17px;
     }
